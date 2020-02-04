@@ -14,7 +14,7 @@ public class GoogleService {
     private MyTransformer transformer;
 
     public GoogleService(RestTemplate myRestTemplate, MyTransformer transformer) {
-        this.restTemplate = restTemplate;
+        this.restTemplate = myRestTemplate;
         this.transformer = transformer;
     }
 
