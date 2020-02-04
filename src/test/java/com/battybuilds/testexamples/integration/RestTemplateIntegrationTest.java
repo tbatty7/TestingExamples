@@ -18,7 +18,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class GoogleServiceIntegrationTest {
+public class RestTemplateIntegrationTest {
 
     MockRestServiceServer mockRestServiceServer;
 
