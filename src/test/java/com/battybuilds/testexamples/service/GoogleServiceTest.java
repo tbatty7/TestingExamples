@@ -13,6 +13,10 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class GoogleServiceTest {
 
+    // This demonstrates why having a live test that depends on a real url is brittle.
+    // The test is flaky and passes sometimes and fails sometimes when it is not ignored.
+    // This often results in developers ignoring the test, thus rendering it pointless.
+
     @Autowired
     GoogleService googleService;
 
