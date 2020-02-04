@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpMethod;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -19,11 +20,12 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class RestTemplateIntegrationTest {
+public class MockServerIntegrationTest {
 
     MockRestServiceServer mockRestServiceServer;
 
     @Autowired
+    @Qualifier("myRestTemplate")
     RestTemplate restTemplate;
 
     @Before
