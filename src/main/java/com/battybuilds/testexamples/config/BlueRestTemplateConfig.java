@@ -7,19 +7,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-public class RestTemplateConfig {
+public class BlueRestTemplateConfig {
+
     private RestTemplateBuilder builder;
 
-    public RestTemplateConfig(RestTemplateBuilder builder) {
+    public BlueRestTemplateConfig(RestTemplateBuilder builder) {
         this.builder = builder;
     }
 
     @Bean
-    @Qualifier("myRestTemplate")
-    public RestTemplate myRestTemplate() {
+    @Qualifier("blueService")
+    public RestTemplate blueRestTemplate() {
         return builder.build();
     }
-
-
-
 }
