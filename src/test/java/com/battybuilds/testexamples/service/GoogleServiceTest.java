@@ -1,5 +1,6 @@
 package com.battybuilds.testexamples.service;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class GoogleServiceTest {
     @Autowired
     GoogleService googleService;
 
+    @Ignore
     @Test
     public void callGoogle() {
         String response = googleService.callGoogle();

@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-@RestClientTest({GoogleService.class, MyTransformer.class, RestTemplateConfig.class, TestexamplesApplication.class})
+@RestClientTest({GoogleService.class, MyTransformer.class, RestTemplateConfig.class})
 @RunWith(SpringRunner.class)
 public class NewMockServerIntegrationTest {
 
