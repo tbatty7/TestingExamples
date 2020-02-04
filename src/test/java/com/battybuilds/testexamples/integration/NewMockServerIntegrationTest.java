@@ -38,7 +38,7 @@ public class NewMockServerIntegrationTest {
     @Before
     public void setUp() {
         // I could write an object as json string with object mapper if I wanted to
-        response = "<a class=hello>";
+        response = "<a class=hello href=otherurl.com ></a>";
         server.expect(requestTo("http://www.google.com")).andRespond(withSuccess(response, MediaType.TEXT_PLAIN));
     }
 
