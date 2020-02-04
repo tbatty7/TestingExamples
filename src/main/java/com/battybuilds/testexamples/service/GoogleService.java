@@ -13,7 +13,7 @@ public class GoogleService {
     private RestTemplate restTemplate;
     private MyTransformer transformer;
 
-    public GoogleService(RestTemplate restTemplate, MyTransformer transformer) {
+    public GoogleService(RestTemplate myRestTemplate, MyTransformer transformer) {
         this.restTemplate = restTemplate;
         this.transformer = transformer;
     }

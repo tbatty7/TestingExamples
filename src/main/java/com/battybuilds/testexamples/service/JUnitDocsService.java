@@ -11,7 +11,7 @@ public class JUnitDocsService {
 
     private RestTemplate restTemplate;
 
-    public JUnitDocsService(RestTemplate restTemplate) {
+    public JUnitDocsService(RestTemplate myRestTemplate) {
         this.restTemplate = restTemplate;
     }
 
